@@ -16,3 +16,8 @@ for (let j = 0; j < 16; j++) {
     }
     parentContainer.appendChild(container)
 }
+
+//add code for hover- create using only one addevent listenter
+parentContainer.addEventListener('mouseover',(e)=>{
+    e.target.style.backgroundColor = 'green';
+})

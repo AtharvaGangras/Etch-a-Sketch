@@ -6,8 +6,8 @@
     box-sizing: border-box;
     min-height:50px;
     min-width: 50px;
-    background-color: blue;
-    border:red 2px solid;
+    background-color: lightgreen;
+    border:2px solid green;
     flex:1;
 }
 .container{
