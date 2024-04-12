@@ -2,12 +2,15 @@
     margin: 0;
     padding: 0;
 }
+body{
+    display: flex;
+}
 .element{
     box-sizing: border-box;
-    min-height:50px;
-    min-width: 50px;
+    /* min-height:50px;
+    min-width: 50px; */
     background-color: lightgreen;
-    border:2px solid green;
+    border:1px solid green;
     flex:1;
 }
 .container{
@@ -17,6 +20,12 @@
 
 .parentContainer{
     height: 100vh;
+    width:100vh;
     display:flex;
     flex-direction: column;
+}
+button{
+    box-sizing: border-box;
+    height:3vh;
+
 }
