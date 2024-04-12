@@ -12,6 +12,7 @@ body{
     background-color: lightgreen;
     border:1px solid green;
     flex:1;
+    opacity: 1;
 }
 .container{
     display:flex;
@@ -23,6 +24,7 @@ body{
     width:100vh;
     display:flex;
     flex-direction: column;
+    background-color: black;
 }
 button{
     box-sizing: border-box;

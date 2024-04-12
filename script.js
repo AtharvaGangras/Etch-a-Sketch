@@ -15,6 +15,7 @@ for (let j = 0; j < size; j++) {
     for (let i = 0; i < size; i++) {
         let element = document.createElement('div');
         element.classList.add('element');
+        element.style.opacity = 1;
         container.appendChild(element);
     }
     parentContainer.appendChild(container)
@@ -22,16 +23,27 @@ for (let j = 0; j < size; j++) {
 }
 createGrid(16);
 //add code for hover- create using only one addevent listenter
+//extra credit
 parentContainer.addEventListener('mouseover',(e)=>{
-    e.target.style.backgroundColor = 'green';
+    
+    let red = random(255);
+    let green = random(255);
+    let blue = random(255);
+    e.target.style.backgroundColor = `rgb(${red},${green},${blue})`;
+    
+    e.target.style.opacity -= 0.1; 
 })
+function random(n){
+    return Math.floor(Math.random() * (1 + n)) 
+}
 
 
 const button = document.querySelector('button');
 button.addEventListener('click',()=>{
     let size;
     do{
-     size = prompt('grid size:');
+     size = prompt('grid size:',16);
+     if(size === null) return;
     }while(size>100);
     createGrid(size);
     
